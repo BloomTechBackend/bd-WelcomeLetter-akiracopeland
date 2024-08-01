@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bloomtech.welcomeletter.MasteryTask_1_BuilderPattern" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-06T01:29:55" hostname="DESKTOP-HRH8VKH" time="0.042">
-  <properties/>
-  <testcase name="testBuilderCreatesInvalidEmployeeObject_returnsRuntimeException()" classname="com.bloomtech.welcomeletter.MasteryTask_1_BuilderPattern" time="0.023"/>
-  <testcase name="testBuilderCreatesValidEmployeeObjects_allFields()" classname="com.bloomtech.welcomeletter.MasteryTask_1_BuilderPattern" time="0.016"/>
-  <testcase name="testBuilderCreatesValidEmployeeObjects_onlyRequiredFields()" classname="com.bloomtech.welcomeletter.MasteryTask_1_BuilderPattern" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

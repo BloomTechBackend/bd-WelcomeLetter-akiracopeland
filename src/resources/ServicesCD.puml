@@ -1,0 +1,39 @@
+@startuml
+
+class EmployeeService {
+    - formLetterService: FormLetterService
+    - EmployeeRepository: employeeRepository
+
+    + getEmployeeById(): Employee
+    + sendFormToEmployeeWithId(): void
+}
+
+class EmployeeRepository {
+    - datasource: Datasource
+
+    + findEmployeeById(): datasource
+}
+
+class FormLetterService {
+
+    + generateWelcomeLetter(): void
+
+}
+
+class FileManager {
+    + getTextFromFile(): String
+    + writeTextToFile(): void
+}
+
+class Datasource {
+
+    - companies: ArrayList
+    - employees: ArrayList
+}
+
+EmployeeService --> FormLetterService
+EmployeeService --> EmployeeRepository
+EmployeeRepository --> Datasource
+FormLetterService --> FileManager
+
+@enduml

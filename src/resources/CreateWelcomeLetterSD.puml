@@ -7,4 +7,21 @@ database Datasource
 participant FormLetterService
 participant FileManager
 
+App -> EmployeeService: sendFormToEmployeeWithId(employeeId)
+EmployeeService -> EmployeeRepository: getEmployeeById(employeeId)
+EmployeeRepository -> Datasource: findEmployeeById(employeeId)
+Datasource --> EmployeeRepository: Employee
+EmployeeRepository --> EmployeeService: Employee
+EmployeeService --> App: Employee
+App -> FormLetterService: generateWelcomeLetter(Employee)
+FormLetterService -> FileManager: getTextFromFile(templatePath)
+FileManager --> FormLetterService: templateText
+FormLetterService -> FileManager: writeTextToFile(outputPath, welcomeLetterText)
+FileManager --> FormLetterService: String
+
+note right of App: Exceptions
+App -> App: RuntimeException
+App --> App: null
+
+
 @enduml
