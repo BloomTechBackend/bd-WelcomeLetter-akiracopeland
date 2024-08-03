@@ -33,7 +33,7 @@ public class FileManager {
 
     public void writeTextToFile(String outFileName, String text) {
         try {
-            File file = new File("src/resources/" + outFileName + ".txt");
+            File file = new File("src/resources/out/" + outFileName + ".txt");
             FileWriter fileWriter = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 

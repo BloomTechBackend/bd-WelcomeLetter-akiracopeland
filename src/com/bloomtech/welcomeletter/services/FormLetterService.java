@@ -15,19 +15,18 @@ public class FormLetterService {
         //TODO: Replace []ed text with correct info
 
         String company_name = employee.getCompany().getCompanyname();
-        String fullname = employee.getFirstname() + employee.getLastname();
+        String fullname = employee.getFirstname() + " " + employee.getLastname();
         String startdate = String.valueOf(employee.getStartdate());
         String startingsalary = String.valueOf(employee.getSalary());
-        String company_starttime =  company_name + " " + startdate;
 
         String replaced_template_data = template_data
                 .replace("[company name]", company_name)
                 .replace("[fullname]", fullname)
                 .replace("[startdate]", startdate)
                 .replace("[startingsalary]", startingsalary)
-                .replace("[company starttime]", company_starttime);
+                .replace("[company starttime]", company_name);
         //TODO: Write finalized String to file
-        String outputFile = "outputfile";
+        String outputFile = "WelcomeTestEmployee";
         fileManager.writeTextToFile(outputFile, replaced_template_data);
     }
 }
