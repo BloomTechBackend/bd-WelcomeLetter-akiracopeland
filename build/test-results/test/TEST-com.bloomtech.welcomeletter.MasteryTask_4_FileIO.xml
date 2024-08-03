@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-08-03T02:00:28" hostname="DESKTOP-HRH8VKH" time="0.038">
+<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-08-03T04:28:33" hostname="DESKTOP-HRH8VKH" time="0.053">
   <properties/>
-  <testcase name="testFileManager_writeToNewFile()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" time="0.027"/>
-  <testcase name="testFileManager_readExistingFile()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" time="0.01">
+  <testcase name="testFileManager_writeToNewFile()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" time="0.036"/>
+  <testcase name="testFileManager_readExistingFile()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" time="0.016">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;The contents of a test file.&#10;&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;The contents of a test file.
 &gt; but was: &lt;&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)

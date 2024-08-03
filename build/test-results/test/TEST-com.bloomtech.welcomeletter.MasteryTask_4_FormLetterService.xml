@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-08-03T02:00:28" hostname="DESKTOP-HRH8VKH" time="0.063">
+<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-08-03T04:28:33" hostname="DESKTOP-HRH8VKH" time="0.067">
   <properties/>
-  <testcase name="generateFormLetter_returnsWelcomeLetter()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" time="0.063">
+  <testcase name="generateFormLetter_returnsWelcomeLetter()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService" time="0.067">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Welcome to test company!&#10;&#10;Dear Test Employee,&#10;&#10;We are all really excited to welcome you to our team! As agreed, your start date will be 2022-08-30 and&#10;your starting salary is $100000.&#10;We expect to see you in our offices at test company.&#10;&#10;We are looking forward to working with you!&#10;&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Welcome to test company!
 
 Dear Test Employee,
